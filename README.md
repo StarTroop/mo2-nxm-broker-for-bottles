@@ -22,14 +22,15 @@ It should go without saying that you'll need to install thses things. Follow Bot
 ## Step 2
 ### Configure each instance of MO2 you want recognised by the broker
 #### Make a symlink in `~/.config/modorganizer2/` to the MO2 installation folder, with the name of the relevant game's Nexus Game ID. 
-- The game ID can be found by the URL of said game's main pade on nexusmods.com.
+- The game ID can be found in the URL of said game's main page on nexusmods.com.
 - For example: `https://www.nexusmods.com/skyrimspecialedition`, here `skyrimspecialedition` is the Nexus Game ID.
 - To make a symlink in a terminal emulator, run `$ ln -s /path/to/MO2/folder ~/.config/modorganizer2/nexus_game_id`.
-- For example, I personally ran this for my Skyrim installation: `$ ln -s /mnt/windows/Skyrim/MO2 ~/.config/modorganizer2/skyrimspecialedition`
+- For example: `$ ln -s ~/.var/app/com.usebottles.bottles/data/bottles/bottles/Skyrim/drive_c/Skyrim/MO2 ~/.config/modorganizer2/skyrimspecialedition`
 - The symlink should contain the whole MO2 installation, including `ModOrganizer.exe` and `nxmhandler.exe`.
 - This will be your **MO2 Instance** for that particular game.
 #### Make a file named `bottle.txt` in the MO2 Instance
 - Fill the document with the name of the Bottle which contains your MO2 Instance. **Nothing Else**.
+- For example: For a Bottle named "Skyrim", the contents of the document should be `SKyrim`.
 ## Step 3
 ### Finish set-up
 - Set the handler as the default application with `$ xdg-mime default modorganizer2-nxm-handler.desktop x-scheme-handler/nxm` in a terminal.
