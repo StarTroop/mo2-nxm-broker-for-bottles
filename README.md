@@ -30,7 +30,7 @@ It should go without saying that you'll need to install thses things. Follow Bot
 - This will be your **MO2 Instance** for that particular game.
 #### Make a file named `bottle.txt` in the MO2 Instance
 - Fill the document with the name of the Bottle which contains your MO2 Instance. **Nothing Else**.
-- For example: For a Bottle named "Skyrim", the contents of the document should be `SKyrim`.
+- For example: For a Bottle named "Skyrim", the contents of the document should be `Skyrim`.
 ## Step 3
 ### Finish set-up
 - Set the handler as the default application with `$ xdg-mime default modorganizer2-nxm-handler.desktop x-scheme-handler/nxm` in a terminal.
